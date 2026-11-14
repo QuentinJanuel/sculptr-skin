@@ -1,0 +1,43 @@
+{
+  "name": "@sculptr/skin",
+  "version": "1.5.1",
+  "displayName": "Skin",
+  "description": "Draw the player as the character you picked in the host.",
+  "keywords": [
+    "fangame",
+    "gamemaker",
+    "i-wanna",
+    "mod",
+    "sculptr"
+  ],
+  "homepage": "https://github.com/QuentinJanuel/sculptr-skin#readme",
+  "bugs": "https://github.com/QuentinJanuel/sculptr-skin/issues",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/QuentinJanuel/sculptr-skin.git"
+  },
+  "type": "module",
+  "main": "dist/index.js",
+  "scripts": {
+    "dev": "concurrently -k \"vite build --watch\" \"vite preview\"",
+    "typecheck": "tsc --noEmit",
+    "prepublishOnly": "vite build"
+  },
+  "devDependencies": {
+    "@types/node": "^24.13.4",
+    "concurrently": "^10.0.5",
+    "typescript": "^7.0.2",
+    "vite": "^8.3.0"
+  },
+  "dependencies": {
+    "@sculptr/detect": "^2.4.0",
+    "@sculptr/sdk": "^2.16.0"
+  },
+  "files": [
+    "dist"
+  ],
+  "publishConfig": {
+    "access": "public"
+  }
+}
