@@ -2,6 +2,7 @@
   "name": "@sculptr/skin",
   "version": "1.5.1",
   "displayName": "Skin",
+  "icon": "https://cdn.jsdelivr.net/npm/@sculptr/skin/icon.svg",
   "description": "Draw the player as the character you picked in the host.",
   "keywords": [
     "fangame",
@@ -35,7 +36,8 @@
     "@sculptr/sdk": "^2.16.0"
   },
   "files": [
-    "dist"
+    "dist",
+    "icon.svg"
   ],
   "publishConfig": {
     "access": "public"
